@@ -1,12 +1,12 @@
 # flat radio field
 
-A mobile/touch optimized radio select in the style of Flat UI. For use with Browserify Only.
+A mobile/touch optimized radio select in the style of Flat UI. For use with NPM modules Browserify and brfs.
 
 ```
 npm install flat-radio-field
 ```
 
-To play with this repo
+To play with this repo, or see the example
 ```
 npm install -g browserify opa
 git clone [this repo]
@@ -15,7 +15,10 @@ opa -e example.js -n
 ```
 ## Usage
 
-It's a function that will return a fieldset HTMLElement with your options. Actual radio inputs are used (tho hidden), so this will/should work inside a normal form element.
+It's a function that will return a fieldset HTMLElement with your options. Default width is 100%, so you should probably put in a container div, or set the width value on the fieldset.
+
+Actual radio inputs are used, so this will/should work inside a normal form element.
+
 It takes an options/config object:
 ```
 legend: title of the options list (used in the legend Element)
