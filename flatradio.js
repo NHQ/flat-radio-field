@@ -15,6 +15,7 @@ module.exports = function(opts){
   }
 
   var es = document.getElementById('uxer-radio-style');
+
   if(es){
     es.parentNode.insertBefore(makeStyle(c), es.nextSibling)
   }
@@ -40,6 +41,7 @@ module.exports = function(opts){
       var inp = document.createElement('input');
       inp.classList.add('uxer-input');
       inp.name = opts.name;
+      inp.value = e.value;
       inp.type = 'radio';
       inp.checked = e.checked || false;
       var radio = document.createElement('div');
